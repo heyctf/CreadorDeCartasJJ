@@ -1,0 +1,144 @@
+/* CreadorDeCartasJJ/Pages/Carta.razor.rz.scp.css */
+.contenedor[b-n9vfx4e0fn] {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+.colorFiltro[b-n9vfx4e0fn] {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.colorFiltro label[b-n9vfx4e0fn] {
+    width: 250px;
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.botonSubida[b-n9vfx4e0fn] {
+    font-size: 35px;
+    padding: 15px;
+    background: gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.colorFiltro input[type=range][b-n9vfx4e0fn] {
+    width: 250px;
+}
+
+.colorFiltro input[type=number][b-n9vfx4e0fn] {
+    width: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.panel[b-n9vfx4e0fn] {
+    width: 300px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.guia[b-n9vfx4e0fn] {
+    margin-left: 200px;
+}
+
+textarea[b-n9vfx4e0fn] {
+    height: 200px;
+    width: 500px;
+    resize: none;
+    font-size: 40px;
+}
+
+#carta[b-n9vfx4e0fn] {
+    position: relative;
+    width: 1376px;
+    height: 2072px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.base[b-n9vfx4e0fn] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre[b-n9vfx4e0fn] {
+    position: absolute;
+    left: 42px;
+    top: 35px;
+    font-size: 85px;
+}
+
+.coste[b-n9vfx4e0fn] {
+    position: absolute;
+    right: 32px;
+    top: 30px;
+    font-size: 75px;
+}
+
+.rareza[b-n9vfx4e0fn] {
+    position: absolute;
+    right: 50px;
+    top: 1120px;
+}
+
+select[b-n9vfx4e0fn] {
+    font-size: 55px;
+}
+
+.tipo[b-n9vfx4e0fn] {
+    position: absolute;
+    left: 42px;
+    top: 1150px;
+    font-size: 55px;
+}
+
+.descripcion[b-n9vfx4e0fn] {
+    position: absolute;
+    left: 50px;
+    top: 1265px;
+    width: 1280px;
+    font-size: 53px;
+}
+
+.simbolo[b-n9vfx4e0fn] {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    position:relative;
+}
+
+button[b-n9vfx4e0fn] {
+    font-size:30px;
+}
+
+.fuerza[b-n9vfx4e0fn] {
+    position: absolute;
+    right: 180px;
+    bottom: 75px;
+    font-size: 70px;
+}
+.resistencia[b-n9vfx4e0fn] {
+    position: absolute;
+    left: 1220px;
+    bottom: 75px;
+    font-size: 70px;
+}
+.arte[b-n9vfx4e0fn] {
+    image-rendering: pixelated;
+}
+
+pee[b-n9vfx4e0fn] {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.descripcion[b-n9vfx4e0fn], .stats[b-n9vfx4e0fn] {
+    white-space: pre-wrap;
+}
