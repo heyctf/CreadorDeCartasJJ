@@ -19,16 +19,23 @@
 }
 
 .botonSubida[b-n9vfx4e0fn] {
-    font-size: 35px;
+    font-size: 33px;
     padding: 15px;
-    background: gray;
-    border-radius: 10px;
+    background: #EFEFEF;
+    border-radius: 0px;
+    border: 1px solid #767676;
     cursor: pointer;
+    text-align: center;
 }
 
-.colorFiltro input[type=range][b-n9vfx4e0fn] {
-    width: 250px;
+.colorFiltro[b-n9vfx4e0fn] {
+    display: flex;
 }
+
+    .colorFiltro input[type=range][b-n9vfx4e0fn] {
+        flex: 1;
+        min-width: 230px;
+    }
 
 .colorFiltro input[type=number][b-n9vfx4e0fn] {
     width: 80px;
@@ -45,12 +52,26 @@
 }
 
 .guia[b-n9vfx4e0fn] {
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
-textarea[b-n9vfx4e0fn] {
-    height: 200px;
-    width: 500px;
+.nombreTxt[b-n9vfx4e0fn] {
+    height: 90px;
+    width: 600px;
+    resize: none;
+    font-size: 40px;
+}
+
+.categoriaTxt[b-n9vfx4e0fn] {
+    height: 100px;
+    width: 600px;
+    resize: none;
+    font-size: 40px;
+}
+
+.descripcionTxt[b-n9vfx4e0fn] {
+    height: 400px;
+    width: 600px;
     resize: none;
     font-size: 40px;
 }
@@ -90,7 +111,7 @@ textarea[b-n9vfx4e0fn] {
 }
 
 select[b-n9vfx4e0fn] {
-    font-size: 55px;
+    font-size: 30px;
 }
 
 .tipo[b-n9vfx4e0fn] {
@@ -141,4 +162,18 @@ pee[b-n9vfx4e0fn] {
 
 .descripcion[b-n9vfx4e0fn], .stats[b-n9vfx4e0fn] {
     white-space: pre-wrap;
+}
+
+.gris[b-n9vfx4e0fn] {
+    color: dimgray;
+}
+
+.cgris[b-n9vfx4e0fn] {
+    color: darkgray;
+    font-style:italic;
+}
+
+.hab[b-n9vfx4e0fn] {
+    font-style: italic;
+    text-decoration: underline;
 }
