@@ -1,4 +1,4 @@
-﻿window.exportarCarta = async () => {
+﻿window.exportarCarta = async (nombreCarta) => {
 
     let carta =
         document.getElementById("carta");
@@ -82,8 +82,9 @@
             "a"
         );
 
-    enlace.download =
-        "cartaJJ.png";
+    nombreCarta = (nombreCarta || "cartaJJ").replace(/[\\/:*?"<>| ]/g, "_");
+
+    enlace.download = nombreCarta+".png";
 
     enlace.href =
         canvas.toDataURL(
@@ -94,7 +95,7 @@
 
 };
 
-window.guardarProyecto = (json) => {
+window.guardarProyecto = (json,nombreCarta) => {
 
     let blob =
         new Blob(
@@ -115,8 +116,9 @@ window.guardarProyecto = (json) => {
 
     a.href = url;
 
-    a.download =
-        "ProyectoCarta.json";
+    nombreCarta = (nombreCarta || "cartaJJ").replace(/[\\/:*?"<>| ]/g, "_");
+
+    a.download = nombreCarta +".json";
 
     a.click();
 
