@@ -342,7 +342,6 @@ select[b-n9vfx4e0fn] {
     width: 1500px;
     height: 990px;
     overflow: hidden;
-    z-index:-2;
 }
 .descripcion[b-n9vfx4e0fn] {
     position: absolute;
