@@ -20,7 +20,8 @@
 
     img.src =
         srcOriginal;
-
+    console.log("srcOriginal =", srcOriginal);
+    console.log("base =", base);
     await img.decode();
 
     // Canvas temporal
@@ -93,6 +94,38 @@
 
     enlace.click();
 
+};
+
+window.exportarCartaNuevo = async (nombreCarta) => {
+
+    let carta =
+        document.getElementById("carta");
+
+    const canvas =
+        await html2canvas(
+            carta,
+            {
+                width: 1376,
+                height: 2072,
+                scale: 1,
+                backgroundColor: null
+            }
+        );
+
+    let enlace =
+        document.createElement("a");
+
+    nombreCarta =
+        (nombreCarta || "cartaJJ")
+            .replace(/[\\/:*?"<>| ]/g, "_");
+
+    enlace.download =
+        nombreCarta + ".png";
+
+    enlace.href =
+        canvas.toDataURL("image/png");
+
+    enlace.click();
 };
 
 window.guardarProyecto = (json,nombreCarta) => {
