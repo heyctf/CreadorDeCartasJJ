@@ -160,3 +160,13 @@ window.guardarProyecto = (json,nombreCarta) => {
     );
 
 };
+
+window.audioPlayer = {
+    play: function (element, volume) {
+        element.volume = volume;
+        element.play();
+    },
+    pause: function (element) {
+        element.pause();
+    }
+};
