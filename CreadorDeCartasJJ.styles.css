@@ -316,6 +316,7 @@
     font-size: 75px;
 }
 
+
 .rareza[b-n9vfx4e0fn] {
     position: absolute;
     right: 49px;
@@ -354,6 +355,11 @@ select[b-n9vfx4e0fn] {
     font-size: 53px;
 }
 
+#carta[b-n9vfx4e0fn],
+#carta *[b-n9vfx4e0fn] {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .simbolo[b-n9vfx4e0fn] {
     width: 40px;
     height: 40px;
@@ -378,6 +384,10 @@ button[b-n9vfx4e0fn] {
     left: 1220px;
     bottom: 75px;
     font-size: 70px;
+}
+
+#carta[b-n9vfx4e0fn] {
+    font-family: "Times New Roman", Times, serif;
 }
 
 .arte[b-n9vfx4e0fn] {
