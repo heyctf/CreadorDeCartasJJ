@@ -1,5 +1,18 @@
 ﻿window.exportarCarta = async (nombreCarta) => {
+    const nodo = document.getElementById("carta");
 
+    domtoimage
+        .toPng(nodo)
+        .then(function (dataUrl) {
+
+            const a = document.createElement("a");
+
+            a.href = dataUrl;
+            a.download = "carta.png";
+
+            a.click();
+        });
+    /*
     let carta =
         document.getElementById("carta");
 
@@ -99,8 +112,7 @@
             "image/png"
         );
 
-    enlace.click();
-
+    enlace.click();*/
 };
 
 window.exportarCartaNuevo = async (nombreCarta) => {
