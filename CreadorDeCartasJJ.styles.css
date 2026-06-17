@@ -347,12 +347,12 @@ select[b-n9vfx4e0fn] {
     height: 990px;
 }
 
-.descripcion[b-n9vfx4e0fn] {
+.descripcion[b-n9vfx4e0fn], .descripcion *[b-n9vfx4e0fn] {
     position: absolute;
     left: 50px;
     top: 1265px;
     width: 1280px;
-    font-size: 53px;
+    font-size: 53px !important;
 }
 
 #carta[b-n9vfx4e0fn],
