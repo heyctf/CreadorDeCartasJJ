@@ -307,6 +307,9 @@
     left: 42px;
     top: 35px;
     font-size: 85px;
+
+    border: 3px solid red;
+    background: rgba(255,0,0,0.2);
 }
 
 .coste[b-n9vfx4e0fn] {
@@ -347,12 +350,12 @@ select[b-n9vfx4e0fn] {
     height: 990px;
 }
 
-.descripcion[b-n9vfx4e0fn], .descripcion *[b-n9vfx4e0fn] {
+.descripcion[b-n9vfx4e0fn] {
     position: absolute;
     left: 50px;
     top: 1265px;
     width: 1280px;
-    font-size: 53px !important;
+    font-size: 53px;
 }
 
 #carta[b-n9vfx4e0fn],
