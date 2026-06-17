@@ -307,9 +307,7 @@
     left: 42px;
     top: 35px;
     font-size: 85px;
-
-    border: 3px solid red;
-    background: rgba(255,0,0,0.2);
+    white-space: nowrap;
 }
 
 .coste[b-n9vfx4e0fn] {
@@ -335,6 +333,7 @@ select[b-n9vfx4e0fn] {
     left: 42px;
     top: 1150px;
     font-size: 55px;
+    white-space: nowrap;
 }
 
 .arte[b-n9vfx4e0fn] {
