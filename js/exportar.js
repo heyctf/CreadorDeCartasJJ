@@ -62,6 +62,13 @@
         r => setTimeout(r, 100)
     );
 
+    // Esperar fuentes
+    await document.fonts.ready;
+    console.log("FUENTES LISTAS");
+    await new Promise(
+        r => setTimeout(r, 1000)
+    );
+
     // Capturar
     const canvas =
         await html2canvas(
