@@ -65,9 +65,9 @@
     // Esperar fuentes
     await document.fonts.ready;
     console.log("FUENTES LISTAS");
-    await new Promise(
-        r => setTimeout(r, 1000)
-    );
+    await new Promise(r => requestAnimationFrame(r));
+    await new Promise(r => requestAnimationFrame(r));
+    await new Promise(r => requestAnimationFrame(r));
 
     // Capturar
     const canvas =
