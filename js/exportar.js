@@ -8,7 +8,12 @@
             const a = document.createElement("a");
 
             a.href = dataUrl;
-            nombreCarta = (nombreCarta || "cartaJJ").replace(/[\\/:*?"<>| ]/g, "_");
+            nombreCarta = (nombreCarta || "cartaJJ")
+                .replace(/\[[^\]]*\]/g, "")
+                .replace(/[\\/:*?"<>| ]/g, "_")
+                .replace(/_+/g, "_")
+                .replace(/^_|_$/g, "")
+                .trim();
             a.download = nombreCarta+".png";
 
             a.click();
